@@ -5,10 +5,8 @@
 A modern full-stack **Human Resources Management System** built with **Next.js 15, React 19, TypeScript, PostgreSQL, Drizzle ORM, Better Auth, Tailwind CSS, and shadcn/ui**.  
 This HRMS helps teams manage employee records, leave requests, manager approvals, leave balances, policies, and role-based HR workflows from a polished **Aurora light/dark dashboard**.
 
-![Next.js](https://img.shields.io/badge/Frontend-React%2019-61dafb?style=for-the-badge&logo=nextdotjs)
 ![React](https://img.shields.io/badge/Frontend-React%2019-61dafb?style=for-the-badge&logo=react)
 ![TypeScript](https://img.shields.io/badge/Language-TypeScript-3178c6?style=for-the-badge&logo=typescript)
-![PostgreSQL](https://img.shields.io/badge/License-See%20LICENSE-f97316?style=for-the-badge&logo=postgresql)
 ![Drizzle](https://img.shields.io/badge/ORM-Drizzle%20ORM-c5f74f?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-See%20LICENSE-f97316?style=for-the-badge)
 
