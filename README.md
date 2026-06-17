@@ -1,14 +1,17 @@
 <div align="center">
 
-# 🧑‍💼 HR Management System — Next.js HRMS
+# 🧑‍💼 HR Management System — Next.js Employee Leave HRMS
 
-A modern full-stack Human Resources Management System built with **Next.js 15, React 19, TypeScript, PostgreSQL, Drizzle ORM, Better Auth, Tailwind CSS, and shadcn/ui** and customized with an **Aurora HR light/dark theme**. This HRMS helps organizations manage employees, roles, leave requests, leave balances, policies, manager approvals, and admin workflows from a clean role-based dashboard experience.
+A modern full-stack **Human Resources Management System** built with **Next.js 15, React 19, TypeScript, PostgreSQL, Drizzle ORM, Better Auth, Tailwind CSS, and shadcn/ui**.  
+This HRMS helps teams manage employee records, leave requests, manager approvals, leave balances, policies, and role-based HR workflows from a polished **Aurora light/dark dashboard**.
 
 ![Next.js](https://img.shields.io/badge/Framework-Next.js%2015-111827?style=for-the-badge&logo=nextdotjs)
 ![React](https://img.shields.io/badge/Frontend-React%2019-61dafb?style=for-the-badge&logo=react)
 ![TypeScript](https://img.shields.io/badge/Language-TypeScript-3178c6?style=for-the-badge&logo=typescript)
 ![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-4169e1?style=for-the-badge&logo=postgresql)
 ![Drizzle](https://img.shields.io/badge/ORM-Drizzle%20ORM-c5f74f?style=for-the-badge)
+![Tailwind CSS](https://img.shields.io/badge/Styling-Tailwind%20CSS-38bdf8?style=for-the-badge&logo=tailwindcss)
+![Auth](https://img.shields.io/badge/Auth-Better%20Auth-7c3aed?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-See%20LICENSE-f97316?style=for-the-badge)
 
 </div>
@@ -17,81 +20,77 @@ A modern full-stack Human Resources Management System built with **Next.js 15, R
 
 ## 📌 Project Overview
 
-**HR Management System** is a full-stack HR platform designed for companies and teams that need a simple, modern, and role-based way to manage employee information and leave workflows. The application includes authentication, admin controls, manager approval flows, employee dashboards, leave type configuration, leave balances, policy management, and profile management.
+**HR Management System** is a full-stack HR operations platform focused on managing **already-hired employees** and their internal leave workflows. It provides role-based dashboards for **Admin/HR**, **Manager**, and **Employee/User** accounts.
 
-This project is suitable as a **Junior to Junior-Mid full-stack portfolio project** because it demonstrates real-world business logic, protected routes, database relationships, seeded role-based accounts, dashboard UI, and production-style full-stack architecture.
+The system is designed for practical business use cases such as employee records, leave applications, leave approvals, leave balances, leave types, leave year configuration, HR policies, and profile management.
 
 ---
 
 ## ✨ Premium Features
 
-- 🔐 **Better Auth authentication** with protected app routes
-- 👥 **Role-based access control** for Admin, Manager, and User accounts
-- 🧑‍💼 **Admin dashboard** for employee and HR system management
-- 🧾 **Employee profile management** with extended user details
-- 🏖️ **Leave application system** with full request workflow
-- ✅ **Manager leave review flow** for approving, accepting, rejecting, or suspending requests
-- 📊 **Leave balance management** for tracking employee leave availability
-- 🗂️ **Leave type configuration** including casual, sick, annual, half-day, and short leave
-- 📅 **Leave year management** for annual HR cycles
-- 📝 **Leave remarks system** for request communication
-- 📚 **Policy management** with rich text content support
-- 🧑‍🤝‍🧑 **Team overview pages** for managers
-- 🎨 **Aurora HR light/dark theme** across landing page, login, dashboard, admin, and manager pages
-- 🎨 **Modern dashboard UI** built with Tailwind CSS, shadcn/ui, Radix UI, and Lucide icons
-- 🌙 **Theme-ready interface** using Next Themes
-- 🧪 **Seeded demo accounts** for Admin, Manager, and User testing
-- 🛢️ **PostgreSQL database** managed with Drizzle ORM migrations
+- 🔐 **Better Auth authentication** with protected application routes
+- 👥 **Role-based access control** for Admin, Manager, and Employee users
+- 🏠 **Static landing page** with Aurora HR visual design
+- 🎨 **light/dark theme** across landing, login, dashboard, admin, and manager pages
+- 🧑‍💼 **Admin dashboard** for employee and system management
+- 👤 **Employee profile management** with extended user details
+- 🏖️ **Leave request workflow** for applying and tracking leaves
+- ✅ **Manager approval flow** for reviewing leave requests
+- 📊 **Leave balance tracking** for employee leave availability
+- 🗂️ **Leave type management** for casual, sick, annual, half-day, and short leaves
+- 📅 **Leave year setup** for annual HR cycles
+- 📝 **Leave remarks system** for communication on requests
+- 📚 **Policy management** with rich text support
+- 🧑‍🤝‍🧑 **Team overview** for managers
+- 🔔 **Toast notifications** using Sonner
+- 🧾 **Form validation** with React Hook Form and Zod
+- 🛢️ **PostgreSQL database** managed through Drizzle ORM migrations
+- 🧪 **Seeded demo accounts** for quick testing
 
 ---
 
 ## 🖼️ Screenshots
 
-Add your project screenshots inside `docs/screenshots/` and update the image names below.
+| Home Page |
+|-------------|
+| ![Home Page](docs/screenshots/homepage.png) |
 
-| Login | Admin Dashboard |
-|------|-----------------|
-| ![Login](docs/screenshots/login.png) | ![Admin Dashboard](docs/screenshots/admin-dashboard.png) |
-
-| Leave Requests | User Management |
-|---------------|-----------------|
-| ![Leave Requests](docs/screenshots/leave-requests.png) | ![User Management](docs/screenshots/users.png) |
-
-| Leave Types | Policies |
-|------------|----------|
-| ![Leave Types](docs/screenshots/leave-types.png) | ![Policies](docs/screenshots/policies.png) |
+| Login | Dashboard |
+|-----------|-------------|
+| ![Login](docs/screenshots/login.png) | ![Dashboard](docs/screenshots/dashboard.png)) |
 
 ---
 
 ## 🧰 Tech Stack
 
-### Full Stack Framework
+### Full-Stack Framework
 
 - Next.js 15
 - React 19
 - TypeScript
 - App Router
-- Server Components and API Routes
+- Server Components
+- API Routes
 
 ### Frontend
 
 - Tailwind CSS
 - shadcn/ui
 - Radix UI
-- Lucide React
+- Lucide React Icons
 - React Hook Form
 - Zod
 - TipTap rich text editor
 - Sonner toast notifications
 - next-themes
 - date-fns
+- Custom Aurora light/dark theme
 
 ### Backend
 
-- Next.js API routes
+- Next.js API Routes
 - Better Auth
 - Drizzle ORM
-- PostgreSQL
 - Node PostgreSQL driver `pg`
 - Resend email integration
 - Slack webhook notification support
@@ -101,7 +100,26 @@ Add your project screenshots inside `docs/screenshots/` and update the image nam
 - PostgreSQL
 - Drizzle Kit migrations
 - Drizzle Studio
-- Relational tables for users, sessions, profiles, leave requests, leave types, leave years, policies, and leave remarks
+- Relational schema design
+- Seed data for demo users, leave types, leave balances, and policies
+
+---
+
+## 👤 User Roles & Flow
+
+| Role | Description |
+| --- | --- |
+| **Admin / HR** | Manages employees, leave balances, leave types, policies, and system settings |
+| **Manager** | Reviews team leave requests and checks team overview |
+| **Employee / User** | Applies for leave, checks leave history, views policies, and manages profile |
+
+### Main Workflow
+
+1. Admin/HR manages employee records and leave settings.
+2. Employee applies for leave from the dashboard.
+3. Manager reviews the request and updates the status.
+4. Employee checks leave history and remaining leave balance.
+5. Admin/HR manages policies, leave types, and system-level settings.
 
 ---
 
@@ -114,6 +132,7 @@ hr-management-system-main/
 │   │   └── login/
 │   ├── (root)/
 │   │   ├── (dashboard)/
+│   │   │   ├── dashboard/
 │   │   │   ├── leave/
 │   │   │   ├── policies/
 │   │   │   └── profile/
@@ -132,7 +151,8 @@ hr-management-system-main/
 │   │   ├── policy/
 │   │   └── user/
 │   ├── globals.css
-│   └── layout.tsx
+│   ├── layout.tsx
+│   └── page.tsx
 ├── components/
 ├── constants/
 ├── db/
@@ -187,10 +207,10 @@ NEXT_PUBLIC_SLACK_WEBHOOK_URL=
 | --- | --- |
 | `DATABASE_URL` | PostgreSQL connection string |
 | `BETTER_AUTH_SECRET` | Secret key used by Better Auth |
-| `BETTER_AUTH_URL` | Backend auth URL, usually `http://localhost:3001` |
+| `BETTER_AUTH_URL` | Auth URL, usually `http://localhost:3001` |
 | `NEXT_PUBLIC_BETTER_AUTH_URL` | Public auth URL used by the frontend |
 | `RESEND_API_KEY` | Resend API key for email support |
-| `RESEND_FROM` | Sender email identity for auth/system emails |
+| `RESEND_FROM` | Sender email identity for system emails |
 | `RESEND_TO` | Optional receiver email for testing |
 | `NEXT_PUBLIC_SLACK_WEBHOOK_URL` | Optional Slack webhook URL for notifications |
 
@@ -206,7 +226,7 @@ Open Command Prompt and run PostgreSQL using the full path:
 "C:\Program Files\PostgreSQL\17\bin\psql.exe" -U postgres
 ```
 
-Then create the project database and user:
+Create the project database and user:
 
 ```sql
 CREATE USER hrms_user WITH PASSWORD 'HrmsPass123';
@@ -224,7 +244,7 @@ ALTER SCHEMA public OWNER TO hrms_user;
 \q
 ```
 
-If the database already exists and you want a fresh setup, run:
+For a fresh reset:
 
 ```sql
 DROP DATABASE IF EXISTS hrms_db WITH (FORCE);
@@ -243,11 +263,11 @@ ALTER SCHEMA public OWNER TO hrms_user;
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/CodeByMan/hr-management-system.git
+git clone https://github.com/your-username/hr-management-system.git
 cd hr-management-system
 ```
 
-Or, if you already downloaded the project ZIP:
+If you already downloaded the ZIP:
 
 ```bat
 cd C:\Users\Work\Downloads\hr-management-system-main
@@ -257,7 +277,7 @@ cd C:\Users\Work\Downloads\hr-management-system-main
 
 This project includes a `yarn.lock`, so Yarn is recommended.
 
-If Yarn is not recognized on Windows, run Yarn through `npx`:
+If Yarn is not recognized on Windows, use Yarn through `npx`:
 
 ```bat
 npx --yes yarn@1.22.22 install
@@ -289,12 +309,6 @@ The project runs at:
 
 ```bash
 http://localhost:3001
-```
-
-Login page:
-
-```bash
-http://localhost:3001/login
 ```
 
 ---
@@ -374,14 +388,16 @@ Role: USER
 | `npx --yes yarn@1.22.22 build` | Create production build |
 | `npx --yes yarn@1.22.22 start` | Start production server on port `3001` |
 | `npx --yes yarn@1.22.22 migrate` | Run Drizzle database migrations |
-| `npx --yes yarn@1.22.22 seed` | Seed demo users and default leave data |
+| `npx --yes yarn@1.22.22 seed` | Seed demo users and default HR data |
 | `npx --yes yarn@1.22.22 generate` | Generate Drizzle migration files |
 | `npx --yes yarn@1.22.22 studio` | Open Drizzle Studio for database inspection |
 
-If Yarn is installed globally, you can use shorter commands:
+If Yarn is installed globally:
 
 ```bash
 yarn dev
+yarn build
+yarn start
 yarn migrate
 yarn seed
 yarn studio
@@ -391,20 +407,22 @@ yarn studio
 
 ## 🔗 Main App Routes
 
-| Module | Route |
-| --- | --- |
-| Login | `/login` |
-| Dashboard | `/` |
-| Leave Management | `/leave` |
-| Policies | `/policies` |
-| Profile | `/profile` |
-| Admin Users | `/admin/users` |
-| Admin Balances | `/admin/balances` |
-| Admin Leave Types | `/admin/leave-types` |
-| Admin Policies | `/admin/policies` |
-| Admin Settings | `/admin/settings` |
-| Manager Requests | `/manager/requests` |
-| Manager Team | `/manager/team` |
+| Module | Route | Description |
+| --- | --- | --- |
+| Landing Page | `/` | Public static landing page |
+| Login | `/login` | Authentication page |
+| Dashboard | `/dashboard` | Authenticated user dashboard |
+| Apply Leave | `/leave/apply` | Employee leave application page |
+| Leave History | `/leave/history` | Employee leave history page |
+| Policies | `/policies` | Company policy viewer |
+| Profile | `/profile` | User profile page |
+| Admin Users | `/admin/users` | Employee/user management |
+| Admin Balances | `/admin/balances` | Leave balance management |
+| Admin Leave Types | `/admin/leave-types` | Leave type configuration |
+| Admin Policies | `/admin/policies` | Policy management |
+| Admin Settings | `/admin/settings` | Leave year and system settings |
+| Manager Requests | `/manager/requests` | Team leave request review |
+| Manager Team | `/manager/team` | Manager team overview |
 
 ---
 
@@ -412,45 +430,22 @@ yarn studio
 
 The backend is handled through Next.js API routes:
 
-| Module | Base Route |
-| --- | --- |
-| Authentication | `/api/auth` |
-| User Management | `/api/user` |
-| Leave Management | `/api/leave` |
-| Leave Remarks | `/api/leave/remark` |
-| Leave Types | `/api/leave/type` |
-| Leave Years | `/api/leave/year` |
-| Policy Management | `/api/policy` |
-
----
-
-## 🧪 Production Build
-
-Create a production build:
-
-```bash
-npx --yes yarn@1.22.22 build
-```
-
-Start the production server:
-
-```bash
-npx --yes yarn@1.22.22 start
-```
-
-Production app runs at:
-
-```bash
-http://localhost:3001
-```
+| Module | Base Route | Description |
+| --- | --- | --- |
+| Authentication | `/api/auth` | Better Auth API handlers |
+| User Management | `/api/user` | User listing, creation, updates, and deletion |
+| Leave Management | `/api/leave` | Leave request creation and retrieval |
+| Leave Remarks | `/api/leave/remark` | Remarks/comments on leave requests |
+| Leave Types | `/api/leave/type` | Leave type management |
+| Leave Years | `/api/leave/year` | Leave year configuration |
+| Policy Management | `/api/policy` | HR policy creation, update, and deletion |
 
 ---
 
 ## 🧑‍💻 Author
 
 **Muhammad Ali Nawaz**  
-Full-Stack Developer  
-MERN Stack Developer and Data Engineer
+MERN Stack Developer
 
 ---
 
