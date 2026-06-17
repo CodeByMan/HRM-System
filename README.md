@@ -5,13 +5,11 @@
 A modern full-stack **Human Resources Management System** built with **Next.js 15, React 19, TypeScript, PostgreSQL, Drizzle ORM, Better Auth, Tailwind CSS, and shadcn/ui**.  
 This HRMS helps teams manage employee records, leave requests, manager approvals, leave balances, policies, and role-based HR workflows from a polished **Aurora light/dark dashboard**.
 
-![Next.js](https://img.shields.io/badge/Framework-Next.js%2015-111827?style=for-the-badge&logo=nextdotjs)
+![Next.js](https://img.shields.io/badge/Frontend-React%2019-61dafb?style=for-the-badge&logo=nextdotjs)
 ![React](https://img.shields.io/badge/Frontend-React%2019-61dafb?style=for-the-badge&logo=react)
 ![TypeScript](https://img.shields.io/badge/Language-TypeScript-3178c6?style=for-the-badge&logo=typescript)
-![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-4169e1?style=for-the-badge&logo=postgresql)
+![PostgreSQL](https://img.shields.io/badge/License-See%20LICENSE-f97316?style=for-the-badge&logo=postgresql)
 ![Drizzle](https://img.shields.io/badge/ORM-Drizzle%20ORM-c5f74f?style=for-the-badge)
-![Tailwind CSS](https://img.shields.io/badge/Styling-Tailwind%20CSS-38bdf8?style=for-the-badge&logo=tailwindcss)
-![Auth](https://img.shields.io/badge/Auth-Better%20Auth-7c3aed?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-See%20LICENSE-f97316?style=for-the-badge)
 
 </div>
@@ -57,7 +55,7 @@ The system is designed for practical business use cases such as employee records
 
 | Login | Dashboard |
 |-----------|-------------|
-| ![Login](docs/screenshots/login.png) | ![Dashboard](docs/screenshots/dashboard.png)) |
+| ![Login](docs/screenshots/login.png) | ![Dashboard](docs/screenshots/dashboard.png) |
 
 ---
 
