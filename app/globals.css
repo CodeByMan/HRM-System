@@ -1,0 +1,191 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-approve: var(--approve);
+  --color-suspend: var(--suspend);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.875rem;
+
+  /* Aurora HR light palette */
+  --background: #f8faff;
+  --foreground: #172033;
+  --card: #ffffff;
+  --card-foreground: #172033;
+  --popover: #ffffff;
+  --popover-foreground: #172033;
+  --primary: #7c3aed;
+  --primary-foreground: #ffffff;
+  --secondary: #e8f8ff;
+  --secondary-foreground: #172033;
+  --muted: #eef4ff;
+  --muted-foreground: #64748b;
+  --accent: #f6edff;
+  --accent-foreground: #4c1d95;
+  --destructive: #ef4444;
+  --approve: #10b981;
+  --suspend: #f59e0b;
+  --border: #dde7f6;
+  --input: #d8e4f5;
+  --ring: #a78bfa;
+  --chart-1: #7c3aed;
+  --chart-2: #06b6d4;
+  --chart-3: #f472b6;
+  --chart-4: #38bdf8;
+  --chart-5: #c084fc;
+  --sidebar: #eef4ff;
+  --sidebar-foreground: #23304a;
+  --sidebar-primary: #7c3aed;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #ffffff;
+  --sidebar-accent-foreground: #4c1d95;
+  --sidebar-border: #dbeafe;
+  --sidebar-ring: #a78bfa;
+}
+
+.dark {
+  /* Aurora HR dark palette */
+  --background: #0e1325;
+  --foreground: #eaf1ff;
+  --card: #161b33;
+  --card-foreground: #eaf1ff;
+  --popover: #161b33;
+  --popover-foreground: #eaf1ff;
+  --primary: #a78bfa;
+  --primary-foreground: #111827;
+  --secondary: #222846;
+  --secondary-foreground: #eaf1ff;
+  --muted: #222846;
+  --muted-foreground: #a8b3cf;
+  --accent: #2b2152;
+  --accent-foreground: #f5f3ff;
+  --destructive: #fb7185;
+  --approve: #34d399;
+  --suspend: #fbbf24;
+  --border: #313a5f;
+  --input: #374066;
+  --ring: #c4b5fd;
+  --chart-1: #a78bfa;
+  --chart-2: #22d3ee;
+  --chart-3: #f0abfc;
+  --chart-4: #38bdf8;
+  --chart-5: #c084fc;
+  --sidebar: #121932;
+  --sidebar-foreground: #eaf1ff;
+  --sidebar-primary: #a78bfa;
+  --sidebar-primary-foreground: #111827;
+  --sidebar-accent: #222846;
+  --sidebar-accent-foreground: #f5f3ff;
+  --sidebar-border: #313a5f;
+  --sidebar-ring: #c4b5fd;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-figtree);
+    min-height: 100svh;
+    background:
+      radial-gradient(circle at 15% 0%, color-mix(in srgb, var(--chart-4) 18%, transparent), transparent 32rem),
+      radial-gradient(circle at 88% 8%, color-mix(in srgb, var(--chart-3) 16%, transparent), transparent 30rem),
+      var(--background);
+  }
+
+  ::selection {
+    background: color-mix(in srgb, var(--primary) 28%, transparent);
+    color: var(--foreground);
+  }
+}
+
+@layer utilities {
+  .aurora-page-shell {
+    position: relative;
+    isolation: isolate;
+    min-height: 100svh;
+    background:
+      radial-gradient(circle at 4% 0%, color-mix(in srgb, var(--chart-4) 22%, transparent), transparent 28rem),
+      radial-gradient(circle at 88% 8%, color-mix(in srgb, var(--chart-3) 22%, transparent), transparent 30rem),
+      linear-gradient(135deg, color-mix(in srgb, var(--background) 94%, var(--chart-4) 6%), var(--background) 42%, color-mix(in srgb, var(--background) 88%, var(--primary) 12%));
+  }
+
+  .aurora-card {
+    border: 1px solid color-mix(in srgb, var(--border) 78%, transparent);
+    background: color-mix(in srgb, var(--card) 88%, transparent);
+    box-shadow: 0 24px 70px -42px color-mix(in srgb, var(--primary) 46%, transparent);
+    backdrop-filter: blur(18px);
+  }
+
+  .aurora-soft-card {
+    border: 1px solid color-mix(in srgb, var(--border) 72%, transparent);
+    background: linear-gradient(135deg, color-mix(in srgb, var(--card) 90%, transparent), color-mix(in srgb, var(--secondary) 65%, transparent));
+    box-shadow: 0 18px 50px -35px color-mix(in srgb, var(--primary) 48%, transparent);
+    backdrop-filter: blur(16px);
+  }
+
+  .aurora-text-gradient {
+    background: linear-gradient(120deg, var(--chart-4), var(--primary), var(--chart-3));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .aurora-button-gradient {
+    background: linear-gradient(135deg, #38bdf8 0%, #7c3aed 52%, #f472b6 100%);
+    color: white;
+    box-shadow: 0 18px 40px -24px rgba(124, 58, 237, 0.75);
+  }
+
+  .dark .aurora-button-gradient {
+    background: linear-gradient(135deg, #22d3ee 0%, #a78bfa 52%, #f0abfc 100%);
+    color: #111827;
+  }
+}
